@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INSIDE RUSSIA | Top Translators</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico.png" type="image/png">
   <style>
     body {
-      margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #111;
       color: #f5f5f5;
     }
@@ -27,10 +28,10 @@
       font-size: 1.2rem;
     }
     nav {
-      background-color: #222;
-      padding: 10px;
       display: flex;
       justify-content: center;
+      background-color: #222;
+      padding: 10px;
     }
     nav a {
       color: #f5f5f5;
@@ -39,18 +40,24 @@
       font-weight: bold;
     }
     .hero {
-      background-image: url("hero-bg.png");
-      background-size: cover;
-      background-position: center;
+      position: relative;
       text-align: center;
-      padding: 80px 20px;
     }
-    .hero h2 {
-      font-size: 2.5rem;
+    .hero img {
+      width: 100%;
+      display: block;
+      filter: brightness(0.5);
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: #f0d288;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px #000;
     }
-    .hero p {
+    .sub-text {
       font-size: 1.2rem;
       color: #fff;
     }
@@ -77,52 +84,50 @@
 </head>
 <body>
 
-  <header>
-    <h1>INSIDE RUSSIA</h1>
-    <p>TOP TRANSLATORS | 中俄专业口译服务</p>
-  </header>
+<nav>
+  <a href="#services">服务</a>
+  <a href="#about">关于我们</a>
+  <a href="#contact">联系我们</a>
+</nav>
 
-  <nav>
-    <a href="#services">服务</a>
-    <a href="#about">关于我们</a>
-    <a href="#contact">联系我们</a>
-  </nav>
+<div class="hero">
+  <img src="hero-banner.png" alt="Top Translators">
+  <div class="hero-text">
+    <div>TOP TRANSLATORS</div>
+    <div class="sub-text">中俄专业口译服务 | Chinese-Russian Interpreting Services</div>
+  </div>
+</div>
 
-  <section class="hero">
-    <h2>TOP TRANSLATORS</h2>
-    <p>中俄专业口译服务 | Chinese-Russian Interpreting Services</p>
-  </section>
+<section id="services">
+  <h2>我们的服务</h2>
+  <div class="service-block">
+    <h3>展会与差旅口译</h3>
+    <p>提供中俄双语翻译，覆盖全俄各类展会，助力企业顺利洽谈。</p>
+  </div>
+  <div class="service-block">
+    <h3>商务谈判与会议口译</h3>
+    <p>经验丰富的口译团队，擅长物流、设备、制造、投资等领域。</p>
+  </div>
+  <div class="service-block">
+    <h3>文化活动与陪同翻译</h3>
+    <p>从接送服务到文化活动，全方位协助您在俄期间的交流。</p>
+  </div>
+</section>
 
-  <section id="services">
-    <h2>我们的服务</h2>
-    <div class="service-block">
-      <h3>展会与差旅口译</h3>
-      <p>提供中俄双语翻译，覆盖全俄各类展会，助力企业顺利洽谈。</p>
-    </div>
-    <div class="service-block">
-      <h3>商务谈判与会议口译</h3>
-      <p>经验丰富的口译团队，擅长物流、设备、制造、投资等领域。</p>
-    </div>
-    <div class="service-block">
-      <h3>文化活动与陪同翻译</h3>
-      <p>从接送服务到文化活动，全方位协助您在俄期间的交流。</p>
-    </div>
-  </section>
+<section id="about">
+  <h2>关于我们</h2>
+  <p>INSIDE RUSSIA 是一家总部位于莫斯科的翻译服务公司，拥有十年以上中俄口译经验。我们为众多中国企业提供专业、定制化的语言解决方案，赢得了客户广泛的信任与好评。</p>
+</section>
 
-  <section id="about">
-    <h2>关于我们</h2>
-    <p>INSIDE RUSSIA 是一家总部位于莫斯科的翻译服务公司，拥有十年以上中俄口译经验。我们为众多中国企业提供专业、定制化的语言解决方案，赢得了客户广泛的信任与好评。</p>
-  </section>
+<section id="contact">
+  <h2>联系我们</h2>
+  <p>邮箱：insiderussia.translators@gmail.com</p>
+  <p>微信/WhatsApp：+7 967 187 1054</p>
+</section>
 
-  <section id="contact">
-    <h2>联系我们</h2>
-    <p>📧 邮箱：<a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
-    <p>📱 WhatsApp：<a href="https://wa.me/79671871054" target="_blank">+7 967 187 1054</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 INSIDE RUSSIA | All Rights Reserved</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 INSIDE RUSSIA | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
