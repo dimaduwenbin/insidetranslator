@@ -1,107 +1,106 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inside Russia — professional Chinese-Russian interpreting services for exhibitions, business negotiations, and travel support." />
+  <meta name="keywords" content="Chinese translator Russia, exhibition interpreter, business translation, Chinese Russian language services" />
+  <meta name="author" content="INSIDE RUSSIA" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>INSIDE RUSSIA | Top Translators</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #f8f8f8;
     }
     header {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      color: #f0d288;
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      color: #ccc;
-      font-size: 1.2rem;
-    }
-    nav {
+      background-color: #111;
+      padding: 1rem;
       display: flex;
-      justify-content: center;
-      background-color: #222;
-      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 60px;
     }
     nav a {
-      color: #f5f5f5;
-      margin: 0 15px;
+      color: #f8f8f8;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .lang-toggle {
+      float: right;
     }
-    h2 {
-      color: #f0d288;
-      border-bottom: 2px solid #f0d288;
-      padding-bottom: 5px;
+    main {
+      padding: 2rem;
+      line-height: 1.6;
     }
-    .service-block {
-      margin-bottom: 30px;
+    .services {
+      margin-top: 2rem;
     }
     footer {
-      background-color: #000;
+      background-color: #111;
+      padding: 1rem;
       text-align: center;
-      padding: 20px;
-      color: #666;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .contact-btn {
+      background-color: #e0b84d;
+      border: none;
+      color: #111;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Inside Russia Logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#" onclick="switchLang('zh')">中文</a>
+      <a href="#" onclick="switchLang('ru')">Русский</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>INSIDE RUSSIA</h1>
-  <p>TOP TRANSLATORS | 中俄专业口译服务</p>
-</header>
+  <main>
+    <h1>INSIDE RUSSIA — Top Translators</h1>
+    <p>Your trusted Chinese-Russian interpreting partner for exhibitions, business negotiations, and cultural exchange.</p>
 
-<nav>
-  <a href="#services">服务</a>
-  <a href="#about">关于我们</a>
-  <a href="#contact">联系我们</a>
-</nav>
+    <div class="services" id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Exhibition and delegation interpreting</li>
+        <li>Business meetings and negotiations</li>
+        <li>Tourist and cultural event support</li>
+      </ul>
+    </div>
 
-<section id="services">
-  <h2>我们的服务</h2>
-  <div class="service-block">
-    <h3>展会与差旅口译</h3>
-    <p>提供中俄双语翻译，覆盖全俄各类展会，助力企业顺利洽谈。</p>
-  </div>
-  <div class="service-block">
-    <h3>商务谈判与会议口译</h3>
-    <p>经验丰富的口译团队，擅长物流、设备、制造、投资等领域。</p>
-  </div>
-  <div class="service-block">
-    <h3>文化活动与陪同翻译</h3>
-    <p>从接送服务到文化活动，全方位协助您在俄期间的交流。</p>
-  </div>
-</section>
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/79671871054" target="_blank">+7 967 187 1054</a></p>
+      <button class="contact-btn" onclick="location.href='mailto:insiderussia.translators@gmail.com'">Contact Us</button>
+    </div>
+  </main>
 
-<section id="about">
-  <h2>关于我们</h2>
-  <p>INSIDE RUSSIA 是一家总部位于莫斯科的翻译服务公司，拥有三年以上中俄口译经验。我们为众多中国企业提供专业、定制化的语言解决方案，赢得了客户广泛的信任与好评。</p>
-</section>
+  <footer>
+    &copy; 2025 INSIDE RUSSIA. All rights reserved.
+  </footer>
 
-<section id="contact">
-  <h2>联系我们</h2>
-  <p>邮箱：your.email@gmail.com</p>
-  <p>微信/WhatsApp：+7 [你的联系方式]</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 INSIDE RUSSIA | All Rights Reserved</p>
-</footer>
-
+  <script>
+    function switchLang(lang) {
+      alert('Language switch to: ' + lang + '\n(Translation pages coming soon)');
+    }
+  </script>
 </body>
 </html>
