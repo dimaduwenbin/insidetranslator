@@ -7,89 +7,15 @@
   <title>Inside Russia — Top Translators</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0a0a;
-      color: #fefefe;
-    }
-    header {
-      background-color: #111;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #2c2c2c;
-    }
-    header .logo {
-      height: 60px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      color: #fefefe;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #d4af37;
-    }
-    main {
-      padding: 60px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #d4af37;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
-    .services h2,
-    .contact h2 {
-      color: #d4af37;
-      margin-top: 40px;
-    }
-    .services ul {
-      padding-left: 20px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #d4af37;
-      color: #0a0a0a;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #999;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 <body>
   <header>
-<img src="logo.png" alt="Inside Russia Logo" class="logo">
+    <img src="logo.jpg" alt="Inside Russia Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" onclick="switchLanguage('ru')">Русский</a></li>
         <li><a href="#" onclick="switchLanguage('zh')">中文</a></li>
       </ul>
     </nav>
@@ -98,7 +24,7 @@
   <main>
     <section class="hero">
       <h1>INSIDE RUSSIA — Top Translators</h1>
-      <p>Your trusted Chinese-Russian interpreting partner for exhibitions, business, and cultural exchange.</p>
+      <p>Your trusted Chinese-Russian interpreting partner for exhibitions, business, and culture.</p>
     </section>
 
     <section class="services">
@@ -114,7 +40,7 @@
       <h2>Contact Us</h2>
       <p><strong>Email:</strong> <a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
       <p><strong>WhatsApp:</strong> <a href="https://wa.me/79671871054">+7 967 187 1054</a></p>
-<a href="https://wa.me/79671871054" class="btn" target="_blank">Write to Us</a>
+      <a href="https://wa.me/79671871054" class="btn" target="_blank">Write to Us</a>
     </section>
   </main>
 
@@ -124,7 +50,6 @@
 
   <script>
     function switchLanguage(lang) {
-      if (lang === 'ru') window.location.href = 'index-ru.html';
       if (lang === 'zh') window.location.href = 'index-zh.html';
     }
   </script>
