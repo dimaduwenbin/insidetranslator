@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INSIDE RUSSIA | Top Translators</title>
-    <link rel="icon" href="favicon.ico.png" type="image/x-icon">
+  <link rel="icon" type="image/png" href="favicon.ico.png">
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
@@ -17,11 +17,6 @@
       background-color: #000;
       padding: 20px;
       text-align: center;
-    }
-    .logo {
-      width: 100px;
-      display: block;
-      margin: 0 auto 10px auto;
     }
     header h1 {
       color: #f0d288;
@@ -57,28 +52,27 @@
     .service-block {
       margin-bottom: 30px;
     }
-    .contact-button {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #f0d288;
-      color: #111;
-      padding: 12px 24px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-    }
     footer {
       background-color: #000;
       text-align: center;
       padding: 20px;
       color: #666;
     }
+    .btn {
+      background-color: #f5d37d;
+      padding: 12px 24px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Inside Russia Logo" class="logo">
   <h1>INSIDE RUSSIA</h1>
   <p>TOP TRANSLATORS | 中俄专业口译服务</p>
 </header>
@@ -113,13 +107,31 @@
 <section id="contact">
   <h2>联系我们</h2>
   <p>邮箱：<a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
-  <p>微信/WhatsApp：<a href="https://wa.me/79671871054" target="_blank">+7 967 187 1054</a></p>
-  <a class="contact-button" href="https://wa.me/79671871054" target="_blank">通过 WhatsApp 联系我们</a>
+  <p>微信/WhatsApp：<a href="https://wa.me/79671871054">+7 967 187 1054</a></p>
+
+  <a href="https://wa.me/79671871054" class="btn">通过 WhatsApp 联系我们</a>
+  <a href="#" onclick="copyWeChatID()" class="btn">复制 WeChat ID 联系我们</a>
+  <span id="copied" style="color: #ccc; margin-left: 10px; display: none;">已复制！</span>
 </section>
 
 <footer>
   <p>&copy; 2025 INSIDE RUSSIA | All Rights Reserved</p>
 </footer>
+
+<script>
+  function copyWeChatID() {
+    const tempInput = document.createElement("input");
+    tempInput.value = "wxid_eubdi0uyuk8e12";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    document.getElementById("copied").style.display = "inline";
+    setTimeout(() => {
+      document.getElementById("copied").style.display = "none";
+    }, 2000);
+  }
+</script>
 
 </body>
 </html>
