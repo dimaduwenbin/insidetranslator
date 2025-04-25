@@ -1,108 +1,143 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我们的翻译团队 | INSIDE RUSSIA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>翻译团队 | INSIDE RUSSIA</title>
+  <link rel="icon" href="favicon.ico.png" type="image/png">
   <style>
     body {
-      background-color: #111;
-      color: #f5f5f5;
       font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #111;
+      color: #f5f5f5;
     }
     header {
-      text-align: center;
-      padding: 40px 20px;
       background-color: #000;
+      text-align: center;
+      padding: 20px;
     }
     header h1 {
+      margin: 0;
+      font-size: 2rem;
       color: #f0d288;
-      margin-bottom: 10px;
     }
-    .team {
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #f0d288;
+      margin-bottom: 40px;
+    }
+    .profiles {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
       justify-content: center;
-      gap: 20px;
-      padding: 40px 20px;
     }
-    .card {
-      background-color: #1a1a1a;
+    .profile {
+      background-color: #1e1e1e;
       border-radius: 10px;
       padding: 20px;
-      width: 280px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      max-width: 300px;
+      flex: 1 1 250px;
     }
-    .card h3 {
+    .profile h3 {
       margin-top: 0;
       color: #f0d288;
     }
-    .card p {
-      font-size: 0.95rem;
+    .profile p {
       margin: 10px 0;
     }
-    .card a {
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
       background-color: #f0d288;
-      color: #111;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      padding: 10px;
-      border-radius: 6px;
-      text-align: center;
-      transition: background 0.3s ease;
     }
-    .card a:hover {
-      background-color: #e0c060;
+    .btn:hover {
+      background-color: #e0be5a;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      margin-top: 50px;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>我们的翻译团队</h1>
-    <p>中俄双语译员 · 专业 · 可靠</p>
-  </header>
 
-  <section class="team">
-    <div class="card">
+<header>
+  <h1>INSIDE RUSSIA 翻译团队</h1>
+</header>
+
+<main class="container">
+  <h2>专业中俄翻译人员</h2>
+  <div class="profiles">
+
+    <div class="profile">
       <h3>亚历山大</h3>
-      <p>俄籍 · 精通中文 · 擅长商务和展会口译</p>
-      <a href="亚历山大%20【简历】%20INSIDE.pdf" target="_blank">查看简历</a>
+      <p>俄籍 · 精通中文 · 商务与展会口译专家</p>
+      <p>擅长：外贸谈判、展览陪同、技术交流</p>
+      <a href="resumes/亚历山大 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
     </div>
 
-    <div class="card">
+    <div class="profile">
       <h3>莎莎</h3>
-      <p>俄籍 · 流利中文 · 文化活动与陪同翻译</p>
-      <a href="莎莎%20【简历】%20INSIDE.pdf" target="_blank">查看简历</a>
+      <p>俄籍 · 中文流利 · 丰富的文化活动翻译经验</p>
+      <p>擅长：文化交流、艺术教育、陪同口译</p>
+      <a href="resumes/莎莎 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
     </div>
 
-    <div class="card">
+    <div class="profile">
       <h3>田露雅</h3>
-      <p>中国籍 · 会俄语 · 展会及制造业领域</p>
-      <a href="田露雅%20【简历】%20INSIDE.pdf" target="_blank">查看简历</a>
+      <p>中俄双母语 · 文学与制造业翻译经验丰富</p>
+      <p>擅长：展会、包装、技术交流</p>
+      <a href="resumes/田露雅 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
     </div>
 
-    <div class="card">
+    <div class="profile">
       <h3>杜文彬</h3>
-      <p>中国籍 · 流利俄语 · 政府与经贸活动</p>
-      <a href="杜文彬%20【简历】%20INSIDE.pdf" target="_blank">查看简历</a>
+      <p>俄籍 · 中文流利 · 高抗压力 · 全能型译员</p>
+      <p>擅长：食品、建材、服装、电子等多个行业</p>
+      <a href="resumes/杜文彬 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
     </div>
 
-    <div class="card">
+    <div class="profile">
       <h3>关杰庚</h3>
-      <p>中国籍 · 中俄双母语 · 全能口译专家</p>
-      <a href="关杰庚%20【简历】%20INSIDE.pdf" target="_blank">查看简历</a>
+      <p>中籍 · 精通俄语 · 资深口笔译人员</p>
+      <p>擅长：家具、建材、美容、制冷与金属展会</p>
+      <a href="resumes/关杰庚 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
     </div>
 
-    <div class="card">
+    <div class="profile">
       <h3>邱靖娱</h3>
-      <p>中国籍 · 会俄语 · 擅长展会及文化交流</p>
-      <a href="邱靖娱%20【简历】%20INSIDE.pdf" target="_blank">查看简历</a>
+      <p>中籍 · 精通俄语 · 展会与文化交流翻译</p>
+      <p>擅长：教育、人力资源、客户接待、展会陪同</p>
+      <a href="resumes/邱靖娱 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
     </div>
-  </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 INSIDE RUSSIA | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
