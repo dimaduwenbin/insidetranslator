@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>翻译团队 | INSIDE RUSSIA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSIDE RUSSIA | Top Translators</title>
   <link rel="icon" href="favicon.ico.png" type="image/png">
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
       background-color: #111;
       color: #f5f5f5;
     }
     header {
       background-color: #000;
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    h1 {
       color: #f0d288;
+      margin: 0;
+      font-size: 2.5rem;
     }
-    .container {
-      max-width: 1100px;
+    .subtitle {
+      color: #ccc;
+      margin: 5px 0 20px 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #222;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
     h2 {
-      text-align: center;
       color: #f0d288;
-      margin-bottom: 40px;
-    }
-    .profiles {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-    .profile {
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 300px;
-      flex: 1 1 250px;
-    }
-    .profile h3 {
-      margin-top: 0;
-      color: #f0d288;
-    }
-    .profile p {
-      margin: 10px 0;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      background-color: #f0d288;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background-color: #e0be5a;
+      border-bottom: 2px solid #f0d288;
+      padding-bottom: 5px;
     }
     footer {
       background-color: #000;
+      color: #666;
       text-align: center;
       padding: 20px;
-      color: #666;
-      margin-top: 50px;
+      margin-top: 40px;
+    }
+    .btn {
+      background-color: #f0d288;
+      color: #000;
+      padding: 12px 24px;
+      display: inline-block;
+      margin: 10px 5px 0 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background-color: #ddb95f;
+    }
+    .buttons {
+      margin-top: 20px;
+      text-align: center;
     }
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
+      nav {
+        flex-direction: column;
+      }
+      .buttons {
+        flex-direction: column;
       }
     }
   </style>
@@ -83,61 +91,53 @@
 <body>
 
 <header>
-  <h1>INSIDE RUSSIA 翻译团队</h1>
+  <img src="logo.png" alt="INSIDE RUSSIA Logo" class="logo">
+  <h1>INSIDE RUSSIA</h1>
+  <p class="subtitle">TOP TRANSLATORS | 中俄专业口译服务</p>
 </header>
 
-<main class="container">
-  <h2>专业中俄翻译人员</h2>
-  <div class="profiles">
+<nav>
+  <a href="#services">服务</a>
+  <a href="#about">关于我们</a>
+  <a href="#contact">联系我们</a>
+  <a href="team.html">翻译团队</a>
+</nav>
 
-    <div class="profile">
-      <h3>亚历山大</h3>
-      <p>俄籍 · 精通中文 · 商务与展会口译专家</p>
-      <p>擅长：外贸谈判、展览陪同、技术交流</p>
-      <a href="resumes/亚历山大 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
-    </div>
+<section id="services">
+  <h2>我们的服务</h2>
+  <p>展会与差旅口译、商务谈判与会议口译、文化活动与陪同翻译。经验丰富的中俄口译团队，助力您的每一次对接与合作。</p>
+</section>
 
-    <div class="profile">
-      <h3>莎莎</h3>
-      <p>俄籍 · 中文流利 · 丰富的文化活动翻译经验</p>
-      <p>擅长：文化交流、艺术教育、陪同口译</p>
-      <a href="resumes/莎莎 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
-    </div>
+<section id="about">
+  <h2>关于我们</h2>
+  <p>INSIDE RUSSIA 是一家总部位于莫斯科的专业翻译服务公司，拥有超过三年的中俄口译经验。我们致力于为中国企业提供高效、可靠、量身定制的语言解决方案。</p>
+</section>
 
-    <div class="profile">
-      <h3>田露雅</h3>
-      <p>中俄双母语 · 文学与制造业翻译经验丰富</p>
-      <p>擅长：展会、包装、技术交流</p>
-      <a href="resumes/田露雅 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
-    </div>
-
-    <div class="profile">
-      <h3>杜文彬</h3>
-      <p>俄籍 · 中文流利 · 高抗压力 · 全能型译员</p>
-      <p>擅长：食品、建材、服装、电子等多个行业</p>
-      <a href="resumes/杜文彬 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
-    </div>
-
-    <div class="profile">
-      <h3>关杰庚</h3>
-      <p>中籍 · 精通俄语 · 资深口笔译人员</p>
-      <p>擅长：家具、建材、美容、制冷与金属展会</p>
-      <a href="resumes/关杰庚 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
-    </div>
-
-    <div class="profile">
-      <h3>邱靖娱</h3>
-      <p>中籍 · 精通俄语 · 展会与文化交流翻译</p>
-      <p>擅长：教育、人力资源、客户接待、展会陪同</p>
-      <a href="resumes/邱靖娱 【简历】 INSIDE.pdf" class="btn" target="_blank">查看简历</a>
-    </div>
-
+<section id="contact">
+  <h2>联系我们</h2>
+  <p>📧 邮箱：<a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
+  <p>📱 微信ID：wxid_eubdi0uyuk8e12</p>
+  <div class="buttons">
+    <a href="https://wa.me/79671871054" class="btn">通过 WhatsApp 联系我们</a>
+    <a href="#" onclick="copyWeChatID()" class="btn">通过微信联系我们</a>
   </div>
-</main>
+</section>
 
 <footer>
-  <p>&copy; 2025 INSIDE RUSSIA | All rights reserved.</p>
+  <p>&copy; 2025 INSIDE RUSSIA. All rights reserved.</p>
 </footer>
+
+<script>
+  function copyWeChatID() {
+    const tempInput = document.createElement("input");
+    tempInput.value = "wxid_eubdi0uyuk8e12";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("微信ID已复制！");
+  }
+</script>
 
 </body>
 </html>
