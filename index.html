@@ -14,31 +14,43 @@
       color: #f5f5f5;
     }
     header {
-      background-color: #000;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
+      background-color: #000;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
     }
     header h1 {
       color: #f0d288;
-      margin: 0;
+      margin: 10px 0 0 0;
       font-size: 2.5rem;
     }
     header p {
       color: #ccc;
+      margin-top: 5px;
       font-size: 1.2rem;
     }
     nav {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       background-color: #222;
       padding: 10px;
+      flex-wrap: wrap;
     }
     nav a {
       color: #f5f5f5;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      background-color: #f0d288;
+      color: #111;
+      padding: 5px 10px;
+      border-radius: 6px;
     }
     section {
       max-width: 1000px;
@@ -49,60 +61,31 @@
       color: #f0d288;
       border-bottom: 2px solid #f0d288;
       padding-bottom: 5px;
+      font-size: 1.8rem;
     }
-    .service-block {
-      margin-bottom: 30px;
+    .btn {
+      background-color: #f5d37d;
+      color: #111;
+      padding: 12px 24px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
     }
     footer {
       background-color: #000;
       text-align: center;
       padding: 20px;
       color: #666;
-    }
-    .btn {
-      background-color: #f5d37d;
-      padding: 12px 24px;
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      border-radius: 6px;
-    }
-    .profiles {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-    .profile {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 300px;
-    }
-    .profile h3 {
-      color: #f0d288;
-      margin-top: 0;
-    }
-    .profile p {
-      margin: 5px 0 15px;
-    }
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      .profiles {
-        justify-content: center;
-      }
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="logo.png" alt="Inside Russia Logo">
   <h1>INSIDE RUSSIA</h1>
   <p>TOP TRANSLATORS | 中俄专业口译服务</p>
 </header>
@@ -111,75 +94,29 @@
   <a href="#services">服务</a>
   <a href="#about">关于我们</a>
   <a href="#contact">联系我们</a>
-  <a href="#team">翻译团队</a>
+  <a href="team.html">翻译团队</a>
 </nav>
 
 <section id="services">
   <h2>我们的服务</h2>
-  <div class="service-block">
-    <h3>展会与差旅口译</h3>
-    <p>提供中俄双语翻译，覆盖全俄各类展会，助力企业顺利洽谈。</p>
-  </div>
-  <div class="service-block">
-    <h3>商务谈判与会议口译</h3>
-    <p>经验丰富的口译团队，擅长物流、设备、制造、投资等领域。</p>
-  </div>
-  <div class="service-block">
-    <h3>文化活动与陪同翻译</h3>
-    <p>从接送服务到文化活动，全方位协助您在俄期间的交流。</p>
-  </div>
+  <p>展会口译、商务谈判、文化活动口译</p>
+  <p>翻译类型包括：俄籍翻译、华人翻译、中俄双母语翻译员</p>
+  <p>覆盖行业：制造业、物流、食品、建材、技术等</p>
 </section>
 
 <section id="about">
   <h2>关于我们</h2>
-  <p>INSIDE RUSSIA 是一家总部位于莫斯科的翻译服务公司，拥有三年以上中俄口译经验。我们为众多中国企业提供专业、定制化的语言解决方案，赢得了客户广泛的信任与好评。</p>
+  <p>INSIDE RUSSIA 是一家总部位于莫斯科的翻译服务公司，拥有超过三年的中俄口译经验。我们为众多中国企业提供专业、定制化的语言解决方案，赢得了客户广泛的信任与好评。</p>
 </section>
 
 <section id="contact">
   <h2>联系我们</h2>
   <p>邮箱：<a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
-  <p>微信/WhatsApp：<a href="https://wa.me/79671871054">+7 967 187 1054</a></p>
-  <a href="https://wa.me/79671871054" class="btn">通过 WhatsApp 联系我们</a>
+  <p>微信/WhatsApp：+7 967 187 1054</p>
+  <a href="https://wa.me/79671871054" class="btn" target="_blank">通过 WhatsApp 联系我们</a>
   <a href="#" onclick="copyWeChatID()" class="btn">复制 WeChat ID 联系我们</a>
   <span id="copied" style="color: #ccc; margin-left: 10px; display: none;">已复制！</span>
 </section>
-
-<section id="team">
-  <h2>翻译团队</h2>
-  <div class="profiles">
-    <div class="profile">
-      <h3>亚历山大</h3>
-      <p>俄籍 · 精通中文 · 商务与展会口译专家<br>
-         擅长：外贸谈判、展览陪同、技术交流。</p>
-    </div>
-    <div class="profile">
-      <h3>莎莎</h3>
-      <p>俄籍 · 中文流利 · 丰富的文化活动翻译经验<br>
-         擅长：文化交流、艺术教育、陪同口译。</p>
-    </div>
-    <div class="profile">
-      <h3>田露雅</h3>
-      <p>中俄双母语 · 文学与制造业翻译经验丰富<br>
-         擅长：展会、包装、技术交流。</p>
-    </div>
-    <div class="profile">
-      <h3>杜文彬</h3>
-      <p>俄籍 · 中文流利 · 高抗压力 · 全能型译员<br>
-         擅长：食品、建材、服装、电子等多个行业。</p>
-    </div>
-    <div class="profile">
-      <h3>关杰庚</h3>
-      <p>中籍 · 精通俄语 · 资深口笔译人员<br>
-         擅长：家具、建材、美容、制冷与金属展会。</p>
-    </div>
-    <div class="profile">
-      <h3>邱靖娱</h3>
-      <p>中籍 · 精通俄语 · 展会与文化交流翻译<br>
-         擅长：教育、人力资源、客户接待、展会陪同。</p>
-    </div>
-  </div>
-</section>
-
 
 <footer>
   <p>&copy; 2025 INSIDE RUSSIA | All Rights Reserved</p>
