@@ -8,123 +8,112 @@
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
       margin: 0;
       padding: 0;
-      background-color: #111;
       color: #f5f5f5;
     }
     header {
       background-color: #000;
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
-    header img {
-      width: 80px;
-    }
-    h1 {
+    header h1 {
+      margin: 0;
       color: #f0d288;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     nav {
       display: flex;
       justify-content: center;
       background-color: #222;
       padding: 10px;
-      flex-wrap: wrap;
     }
     nav a {
       color: #f5f5f5;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1rem;
     }
-    nav a:hover {
-      background-color: #f0d288;
-      color: #111;
-      padding: 5px 10px;
-      border-radius: 6px;
+    .team-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
     .translator-card {
-      background-color: #1c1c1c;
-      border-radius: 10px;
+      background-color: #222;
       padding: 20px;
-      margin: 20px;
+      border-radius: 8px;
       text-align: center;
+    }
+    .translator-card h2 {
+      margin-top: 0;
+      color: #f0d288;
+    }
+    .translator-card p {
+      margin: 10px 0 20px;
     }
     .btn {
       background-color: #f5d37d;
-      padding: 10px 20px;
-      margin-top: 15px;
-      display: inline-block;
+      color: #000;
       text-decoration: none;
-      color: #111;
-      font-weight: bold;
+      padding: 10px 20px;
       border-radius: 6px;
-    }
-    footer {
-      background-color: #000;
-      text-align: center;
-      padding: 20px;
-      color: #666;
+      font-weight: bold;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Inside Russia Logo">
   <h1>翻译团队</h1>
 </header>
 
 <nav>
-  <a href="index.html">首页</a>
-  <a href="index.html#services">服务</a>
-  <a href="index.html#about">关于我们</a>
-  <a href="index.html#contact">联系我们</a>
+  <a href="index.html">返回首页</a>
 </nav>
 
-<section>
+<section class="team-section">
   <div class="translator-card">
     <h2>亚历山大</h2>
     <p>俄籍 · 精通中文 · 擅长商务与展会口译</p>
-    <a href="亚历山大【简历】INSIDE.pdf" target="_blank" class="btn">查看简历</a>
+    <a href="alexander_resume.pdf" target="_blank" class="btn">查看简历</a>
   </div>
 
   <div class="translator-card">
     <h2>莎莎</h2>
     <p>俄籍 · 流利中文 · 文化活动与陪同翻译</p>
-    <a href="莎莎【简历】INSIDE.pdf" target="_blank" class="btn">查看简历</a>
+    <a href="sasha_resume.pdf" target="_blank" class="btn">查看简历</a>
   </div>
 
   <div class="translator-card">
     <h2>田露雅</h2>
-    <p>中俄双母语 · 会俄语 · 制造业与展会领域</p>
-    <a href="田露雅【简历】INSIDE.pdf" target="_blank" class="btn">查看简历</a>
+    <p>中俄双母语 · 会俄语 · 展会及制造业领域</p>
+    <a href="tian_resume.pdf" target="_blank" class="btn">查看简历</a>
   </div>
 
   <div class="translator-card">
     <h2>杜文彬</h2>
-    <p>中籍 · 流利俄语 · 高抗压 · 全能翻译</p>
-    <a href="杜文彬【简历】INSIDE.pdf" target="_blank" class="btn">查看简历</a>
+    <p>俄籍 · 流利中文 · 高抗压 · 全能翻译</p>
+    <a href="du_resume.pdf" target="_blank" class="btn">查看简历</a>
   </div>
 
   <div class="translator-card">
     <h2>关杰庚</h2>
-    <p>中籍 · 中俄双母语 · 全能口译专家</p>
-    <a href="关杰庚【简历】INSIDE.pdf" target="_blank" class="btn">查看简历</a>
+    <p>中国籍 · 丰富经历 · 全能口译专家</p>
+    <a href="guan_resume.pdf" target="_blank" class="btn">查看简历</a>
   </div>
 
   <div class="translator-card">
     <h2>邱靖娱</h2>
-    <p>中籍 · 会俄语 · 擅长展会与文化交流</p>
-    <a href="邱靖娱【简历】INSIDE.pdf" target="_blank" class="btn">查看简历</a>
+    <p>中国籍 · 会俄语 · 擅长展会及文化交流</p>
+    <a href="qiu_resume.pdf" target="_blank" class="btn">查看简历</a>
   </div>
 </section>
-
-<footer>
-  <p>&copy; 2025 INSIDE RUSSIA | All Rights Reserved</p>
-</footer>
 
 </body>
 </html>
