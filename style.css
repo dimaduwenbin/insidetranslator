@@ -47,3 +47,48 @@ footer {
   padding: 15px 0;
   font-size: 0.9rem;
 }
+.translator-card {
+  background-color: #222;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px;
+  transition: transform 0.3s;
+}
+
+.translator-card:hover {
+  transform: translateY(-5px);
+}
+
+.translator-photo {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.translator-card h2 {
+  color: #f0d288;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.translator-card p {
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  background-color: #f5d37d;
+  color: #000;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+}
