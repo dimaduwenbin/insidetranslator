@@ -65,9 +65,9 @@ footer {
   width: 140px;
   height: 180px;
   object-fit: cover;
-  background: #fff;
   border-radius: 20px;
   margin-bottom: 15px;
+  background-color: #fff;
 }
 
 .translator-card h2 {
