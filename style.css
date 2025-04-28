@@ -68,6 +68,9 @@ footer {
   border-radius: 20px;
   margin-bottom: 15px;
   background-color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .translator-card h2 {
