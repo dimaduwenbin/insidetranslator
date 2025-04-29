@@ -31,6 +31,42 @@ h1 {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: #111;
+  border: 1px solid #f0d288;
+  border-radius: 12px;
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  margin: 4px 0;
+  color: #f0d288;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.service-card .small {
+  font-size: 14px;
+  color: #f0d288;
+  opacity: 0.9;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
