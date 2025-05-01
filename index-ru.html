@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INSIDE RUSSIA | Профессиональные переводчики</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="favicon.ico.png">
+  <style>
+  </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Логотип Inside Russia" />
-    <h1>INSIDE RUSSIA</h1>
-    <p>Профессиональные устные и письменные переводы</p>
-  </header>
 
-  <nav>
-    <a href="index-ru.html">Русский 🇷🇺</a>
-    <a href="index.html">中文 🇨🇳</a>
-    <a href="#about">О компании</a>
-    <a href="#contact">Контакты</a>
-    <a href="team.html">Наша команда</a>
-  </nav>
+<header>
+  <img src="logo.png" alt="Логотип Inside Russia">
+  <h1>INSIDE RUSSIA</h1>
+  <p>ПЕРЕВОДЧИКИ №1 | Устные и письменные услуги</p>
+</header>
 
-  <section class="services" id="services">
-    <h2>Наши услуги</h2>
-    <div class="service-cards">
-      <div class="service-card">
-        <img src="icon-interpretation.png" alt="Устный перевод" />
-        <div class="title">Устный перевод</div>
-        <div class="desc">Синхронный и последовательный перевод</div>
-      </div>
-      <div class="service-card">
-        <a href="translation.html">
-          <img src="icon-translation.png" alt="Письменный перевод" />
-          <div class="title">Письменный перевод</div>
-          <div class="desc">Документы, сертификаты, сайты</div>
-        </a>
-      </div>
-      <div class="service-card">
-        <img src="icon-special.png" alt="Спецуслуги" />
-        <div class="title">Спецуслуги</div>
-        <div class="desc">Поддержка на мероприятиях и выставках</div>
-      </div>
+<nav>
+  <a href="index-ru.html">Русский 🇷🇺</a>
+  <a href="index.html">中文 🇨🇳</a>
+  <a href="#about">О нас</a>
+  <a href="#contact">Контакты</a>
+  <a href="team.html">Наша команда</a>
+</nav>
+
+<section class="services">
+  <h2>Наши услуги</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="icon-interpretation.png" alt="Устный перевод">
+      <div class="title">Устный перевод</div>
+      <div class="desc">Перевод на встречах, онлайн и офлайн</div>
     </div>
-  </section>
+    <div class="service-card">
+      <img src="icon-translation.png" alt="Письменный перевод">
+      <div class="title">Письменный перевод</div>
+      <div class="desc">Перевод документов, справок, сайтов</div>
+    </div>
+    <div class="service-card">
+      <img src="icon-special.png" alt="Сопровождение">
+      <div class="title">Сопровождение</div>
+      <div class="desc">Выставки, логистика, организация мероприятий</div>
+    </div>
+  </div>
+</section>
 
-  <section id="about">
-    <h2>О компании</h2>
-    <p>INSIDE RUSSIA — это московское агентство переводов с более чем 3-летним опытом в сфере китайско-русского устного перевода. Мы сотрудничаем с ведущими китайскими компаниями, предоставляя индивидуальные лингвистические решения.</p>
-  </section>
+<section id="about">
+  <div style="text-align: center;">
+    <h2>О нас</h2>
+  </div>
+  <p>INSIDE RUSSIA — компания в Москве с более чем 3-летним опытом перевода между китайским и русским языками. Мы предоставляем профессиональные решения для китайских компаний, приезжающих в Россию, и заслужили доверие десятков клиентов.</p>
+</section>
 
-  <section id="contact">
+<section id="contact">
+  <div style="text-align: center;">
     <h2>Контакты</h2>
-    <p>Email: <a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
-    <p>WeChat / WhatsApp: +7 967 187 1054</p>
-    <a href="https://wa.me/79671871054" class="btn">Написать в WhatsApp</a>
-    <a href="#" class="btn" onclick="copyWeChat()">Скопировать WeChat ID</a>
-    <span id="copied" style="display: none;">Скопировано!</span>
-  </section>
+  </div>
+  <p>Email: <a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
+  <p>WeChat / WhatsApp: +7 967 187 1054</p>
+  <a href="https://wa.me/79671871054" class="btn" target="_blank">Написать в WhatsApp</a>
+  <a href="#" onclick="copyWeChatID()" class="btn">Скопировать WeChat ID</a>
+  <span id="copied" style="color: #ccc; margin-left: 10px; display: none;">Скопировано!</span>
+</section>
 
-  <footer>
-    <p>&copy; 2025 INSIDE RUSSIA. Все права защищены.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 INSIDE RUSSIA | Все права защищены</p>
+</footer>
 
-  <script>
-    function copyWeChat() {
-      const input = document.createElement("input");
-      input.value = "wxid_eubdi0uyuk8e12";
-      document.body.appendChild(input);
-      input.select();
-      document.execCommand("copy");
-      document.body.removeChild(input);
-      document.getElementById("copied").style.display = "inline";
-      setTimeout(() => {
-        document.getElementById("copied").style.display = "none";
-      }, 2000);
-    }
-  </script>
+<script>
+  function copyWeChatID() {
+    const tempInput = document.createElement("input");
+    tempInput.value = "wxid_eubdi0uyuk8e12";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    document.getElementById("copied").style.display = "inline";
+    setTimeout(() => {
+      document.getElementById("copied").style.display = "none";
+    }, 2000);
+  }
+</script>
+
 </body>
 </html>
