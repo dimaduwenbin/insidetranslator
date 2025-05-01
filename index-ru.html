@@ -1,86 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INSIDE RUSSIA | Профессиональные переводчики</title>
-  <link rel="icon" type="image/png" href="favicon.ico.png">
+  <link rel="icon" type="image/png" href="favicon.ico.png" />
   <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      color: #f0d288;
+      margin: 10px 0 0 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      color: #ccc;
+      margin-top: 5px;
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #f5f5f5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      background-color: #f0d288;
+      color: #111;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #f0d288;
+      border-bottom: 2px solid #f0d288;
+      padding-bottom: 5px;
+      font-size: 1.8rem;
+    }
+    .btn {
+      background-color: #f5d37d;
+      color: #111;
+      padding: 12px 24px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      margin-top: 40px;
+    }
+    .services {
+      padding: 3px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .service-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .service-card {
+      background-color: #222;
+      padding: 30px;
+      border-radius: 12px;
+      width: 180px;
+      height: 220px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .service-card .title {
+      font-size: 1.2rem;
+      color: #f0d288;
+      font-weight: bold;
+    }
+    .service-card .desc {
+      font-size: 0.9rem;
+      color: #ccc;
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Логотип Inside Russia">
+  <img src="logo.png" alt="Inside Russia Logo" />
   <h1>INSIDE RUSSIA</h1>
-  <p>ПЕРЕВОДЧИКИ №1 | Устные и письменные услуги</p>
+  <p>Профессиональные устные и письменные переводы</p>
 </header>
 
 <nav>
   <a href="index-ru.html">Русский 🇷🇺</a>
   <a href="index.html">中文 🇨🇳</a>
+  <a href="#services">Услуги</a>
   <a href="#about">О нас</a>
   <a href="#contact">Контакты</a>
   <a href="team.html">Наша команда</a>
 </nav>
 
-<section class="services">
+<section class="services" id="services">
   <h2>Наши услуги</h2>
   <div class="service-cards">
     <div class="service-card">
-      <img src="icon-interpretation.png" alt="Устный перевод">
+      <img src="icon-interpretation.png" alt="Устный перевод" />
       <div class="title">Устный перевод</div>
-      <div class="desc">Дистанционный или очный перевод встреч</div>
+      <div class="desc">Перевод встреч в онлайн и офлайн формате</div>
     </div>
     <div class="service-card">
-      <img src="icon-translation.png" alt="Письменный перевод">
+      <img src="icon-translation.png" alt="Письменный перевод" />
       <div class="title">Письменный перевод</div>
       <div class="desc">Документы, сертификаты, сайты</div>
     </div>
     <div class="service-card">
-      <img src="icon-special.png" alt="Специальные услуги">
-      <div class="title">Специальные услуги</div>
-      <div class="desc">Помощь на выставках, индивидуальные решения</div>
+      <img src="icon-special.png" alt="Индивидуальные услуги" />
+      <div class="title">Индивидуальные услуги</div>
+      <div class="desc">Помощь на выставках и спецпроекты</div>
     </div>
   </div>
 </section>
 
 <section id="about">
-  <div style="text-align: center;">
-    <h2>О нас</h2>
-  </div>
-  <p>INSIDE RUSSIA — компания в Москве с более чем 3-летним опытом перевода между китайским и русским языками. Мы предоставляем профессиональные решения для китайских компаний, приезжающих в Россию, и заслужили доверие десятков клиентов.</p>
+  <h2>О нас</h2>
+  <p>INSIDE RUSSIA — компания, базирующаяся в Москве, специализирующаяся на китайско-русских переводах. С более чем 3-летним опытом мы предлагаем надёжные решения для бизнеса.</p>
 </section>
 
 <section id="contact">
-  <div style="text-align: center;">
-    <h2>Контакты</h2>
-  </div>
+  <h2>Контакты</h2>
   <p>Email: <a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
-  <p>WeChat / WhatsApp: +7 967 187 1054</p>
+  <p>WhatsApp/WeChat: +7 967 187 1054</p>
   <a href="https://wa.me/79671871054" class="btn" target="_blank">Написать в WhatsApp</a>
-  <a href="#" onclick="copyWeChatID()" class="btn">Скопировать WeChat ID</a>
-  <span id="copied" style="color: #ccc; margin-left: 10px; display: none;">Скопировано!</span>
 </section>
 
 <footer>
   <p>&copy; 2025 INSIDE RUSSIA | Все права защищены</p>
 </footer>
-
-<script>
-  function copyWeChatID() {
-    const tempInput = document.createElement("input");
-    tempInput.value = "wxid_eubdi0uyuk8e12";
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-    document.getElementById("copied").style.display = "inline";
-    setTimeout(() => {
-      document.getElementById("copied").style.display = "none";
-    }, 2000);
-  }
-</script>
 
 </body>
 </html>
