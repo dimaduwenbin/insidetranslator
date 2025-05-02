@@ -1,11 +1,149 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Наша команда | INSIDE RUSSIA</title>
+  <link rel="icon" type="image/png" href="favicon.ico.png">
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
+      margin: 0;
+      padding: 0;
+      color: #f5f5f5;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 0;
+      color: #f0d288;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px;
+    }
+    nav a {
+      color: #f5f5f5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .team-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .translator-card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .translator-card:hover {
+      transform: translateY(-5px);
+    }
+    .translator-photo {
+      width: 140px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin: 0 auto 15px;
+      display: block;
+      background-color: #fff;
+    }
+    .translator-card h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #f0d288;
+      font-size: 1.8rem;
+    }
+    .translator-card p {
+      font-size: 1.1rem;
+      margin: 10px 0 20px;
+      line-height: 1.5;
+    }
+    .btn {
+      background-color: #f5d37d;
+      color: #000;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: inline-block;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .btn:hover {
+      background-color: #e6c24d;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
-<body style="background-color:#111; color:#f5f5f5; font-family:sans-serif;">
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Логотип Inside Russia">
   <h1>Наша команда</h1>
-  <p>Здесь будет информация о переводчиках и специалистах нашей команды.</p>
+</header>
+
+<nav>
+  <a href="index-ru.html">На главную</a>
+</nav>
+
+<section class="team-section">
+  <div class="translator-card">
+    <img src="alexandr.JPG" alt="Александр" class="translator-photo">
+    <h2>Александр</h2>
+    <p>Русский · Свободный китайский · Бизнес и выставки</p>
+    <a href="alexander_resume.pdf" target="_blank" class="btn">Смотреть резюме</a>
+  </div>
+
+  <div class="translator-card">
+    <img src="yangz.JPG" alt="Ян Цзы" class="translator-photo">
+    <h2>Ян Цзы</h2>
+    <p>Китаянка · Член КПК · Надёжная теоретическая база</p>
+    <a href="yang_resume.pdf" target="_blank" class="btn">Смотреть резюме</a>
+  </div>
+
+  <div class="translator-card">
+    <img src="sasha.png" alt="Саша" class="translator-photo">
+    <h2>Саша</h2>
+    <p>Русская · Свободный китайский · Культурные мероприятия и сопровождение</p>
+    <a href="sasha_resume.pdf" target="_blank" class="btn">Смотреть резюме</a>
+  </div>
+
+  <div class="translator-card">
+    <img src="luya.png" alt="Тянь Луя" class="translator-photo">
+    <h2>Тянь Луя</h2>
+    <p>Билингв · Образование в РФ и Китае · Промышленные выставки</p>
+    <a href="tian_resume.pdf" target="_blank" class="btn">Смотреть резюме</a>
+  </div>
+
+  <div class="translator-card">
+    <img src="wenbin.png" alt="Ду Вэньбинь" class="translator-photo">
+    <h2>Ду Вэньбинь</h2>
+    <p>Русский · Свободный китайский · Стрессоустойчивый · Универсальный</p>
+    <a href="du_resume.pdf" target="_blank" class="btn">Смотреть резюме</a>
+  </div>
+</section>
+
 </body>
 </html>
