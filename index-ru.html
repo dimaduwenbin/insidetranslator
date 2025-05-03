@@ -182,33 +182,30 @@ header {
   position: relative;
 }
 
-.lang-switch {
+.language-switcher {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
   display: flex;
-  gap: 8px;
+  gap: 6px;
+  z-index: 999;
 }
 
 .lang-btn {
-  background-color: #f0d288;
-  color: #111;
-  padding: 5px 10px;
-  font-weight: bold;
-  font-size: 0.9rem;
+  background-color: #222;
+  color: #f0d288;
   border-radius: 6px;
+  padding: 4px 10px;
+  font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.lang-btn:hover {
-  background-color: #e6c24d;
+  font-size: 0.9rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .lang-btn.active {
-  background-color: #111;
-  color: #f0d288;
-  border: 1px solid #f0d288;
+  background-color: #f0d288;
+  color: #000;
 }
 
 @media screen and (max-width: 600px) {
@@ -224,8 +221,8 @@ header {
 
 <header>
 <div class="language-switcher">
- <a href="index.html" class="lang-btn">中文</a>
-<a href="index-ru.html" class="lang-btn active">RU</a>
+  <a href="index.html" class="lang-btn zh">中文</a>
+  <a href="index-ru.html" class="lang-btn ru active">RU</a>
 </div>
   <img src="logo.png" alt="Inside Russia Logo">
   <h1>INSIDE RUSSIA</h1>
