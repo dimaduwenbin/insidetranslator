@@ -182,38 +182,47 @@ header {
   position: relative;
 }
 
-.language-switcher {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 6px;
-  z-index: 999;
-}
+.lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 6px;
+      z-index: 999;
+    }
 
-.lang-btn {
-  background-color: #222;
-  color: #f0d288;
-  border-radius: 6px;
-  padding: 4px 10px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 0.9rem;
-  border: none;
-  transition: all 0.2s ease-in-out;
-}
+    .lang-btn {
+      background-color: #222;
+      color: #f0d288;
+      padding: 4px 8px;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
 
-.lang-btn.active {
-  background-color: #f0d288;
-  color: #000;
-}
+    .lang-btn:hover {
+      background-color: #f0d288;
+      color: #111;
+    }
 
-@media screen and (max-width: 600px) {
-  .lang-switch {
-    top: 12px;
-    right: 10px;
-  }
-}
+    .lang-btn.active {
+      background-color: #f0d288;
+      color: #111;
+    }
+
+    @media screen and (max-width: 600px) {
+      .lang-switch {
+        top: 15px;
+        right: 12px;
+      }
+
+      .lang-btn {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+      }
+    }
 
   </style>
 </head>
