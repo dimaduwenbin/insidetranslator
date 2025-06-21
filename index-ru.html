@@ -280,15 +280,36 @@ header {
 </section>
 
 <section id="contact">
+  <div style="text-align: center;">
   <h2>Контакты</h2>
-  <p>Email: <a href="mailto:insiderussia.translators@gmail.com">insiderussia.translators@gmail.com</a></p>
-  <p>WhatsApp/WeChat: +7 967 187 1054</p>
+    </div>
+  <p>Почта：insiderussia.translators@gmail.com</p>
+  <p>WhatsApp：+7 967 187 1054</p>
   <a href="https://wa.me/79671871054" class="btn" target="_blank">Написать в WhatsApp</a>
+<a href="weixin://" onclick="copyWeChatID()" class="btn">
+  Написать в WeChat 
+</a>
+<span id="copied" style="display:none; color: lightgreen; margin-left: 10px;">Скопировано！</span>
 </section>
 
 <footer>
   <p>&copy; 2025 INSIDE RUSSIA | Все права защищены</p>
 </footer>
+
+<script>
+  function copyWeChatID() {
+    const tempInput = document.createElement("input");
+    tempInput.value = "wenbin_translate";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    document.getElementById("copied").style.display = "inline";
+    setTimeout(() => {
+      document.getElementById("copied").style.display = "none";
+    }, 2000);
+  }
+</script>
 
 </body>
 </html>
